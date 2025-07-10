@@ -24,3 +24,8 @@ The website is designed with a **clean UI/UX** and is optimized for **all device
 | HTML5      | Page structure and semantic layout |
 | CSS3       | Styling, Flexbox, Grid, Media Queries |
 | JavaScript | Interactivity (like menu toggling, animations, etc.) |
+
+---
+
+## 🔗 Live Demo
+[Click Here to View the Live Project](https://roshanrrana.github.io/Personal-Portfolio-Website/)
