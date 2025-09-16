@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Data Analyst"," Web Developer",],
+        strings: ["Data Analyst","Web Developer"],
         typeSpeed: 200,
         backSpeed: 100,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Data Analyst"," Web Developer"],
+    var typed2 = new Typed(".typing-2", {
+        strings: ["Data Analyst","Web Developer"],
         typeSpeed: 200,
         backSpeed: 100,
         loop: true
@@ -68,5 +68,21 @@ $(document).ready(function(){
                 nav: false
             }
         }
+    });
+
+    // ===== Feedback Form Demo Submit =====
+    $("#feedbackForm").submit(function(event){
+        event.preventDefault(); // page reload hone se roke
+
+        // success message show kare
+        $("#successMsg").fadeIn();
+
+        // inputs clear kare
+        $(this).trigger("reset");
+
+        // 5 sec baad success message hide ho jaye
+        setTimeout(function(){
+            $("#successMsg").fadeOut();
+        }, 5000);
     });
 });
